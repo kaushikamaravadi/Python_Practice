@@ -30,6 +30,7 @@ while True:
     4. size
     5. Print the Linked list
     """
+    
     print(default)
     option = int(input("Select any option"))
 
