@@ -1,7 +1,11 @@
-class Node:
-    def __init__(self,initdata):
-        self.data = initdata
-        self.next = None
+"""Linked List"""
+
+
+class Node(object):
+
+    def __init__(self, data=None, next=None):
+        self.data = data
+        self.next = next
 
     def get_data(self):
         return self.data
@@ -9,61 +13,86 @@ class Node:
     def get_next(self):
         return self.next
 
-    def set_data(self, newdata):
-        self.data = newdata
-
-    def set_next(self, newnext):
-        self.next = newnext
+    def set_next(self, new_next):
+        self.next = new_next
 
 
-class UnorderedList:
+class LinkedList(object):
 
-    def __init__(self):
-        self.head = None
+    def __init__(self, head=None):
+        self.head = head
 
-    def is_empty(self):
-        return self.head is None
-
-    def add(self,item):
-        temp = Node(item)
-        temp.set_next(self.head)
-        self.head = temp
+    def add(self, data):
+        new_node = Node(data)
+        new_node.set_next(self.head)
+        self.head = new_node
 
     def size(self):
         current = self.head
         count = 0
-        while current is not None:
+        while current:
             count += 1
             current = current.get_next()
-
         return count
 
-    def search(self,item):
+    def search(self, data):
         current = self.head
-        found = False
-        while current is not None and not found:
-            if current.get_data() == item:
-                found = True
+        while current:
+            if current.get_data() == data:
+                return current
             else:
                 current = current.get_next()
+        return None
 
-        return found
-
-    def remove(self,item):
+    def remove(self, data):
         current = self.head
-        previous = None
-        found = False
-        while not found:
-            if current.get_data() == item:
-                found = True
-            else:
-                previous = current
-                current = current.get_next()
+        prev = None
+        while current:
+            if current.get_data() == data:
+                if current == self.head:
+                    self.head = current.get_next()
+                else:
+                    prev.set_next(current.get_next())
+                return current
+            prev = current
+            current = current.get_next()
+        return None
 
-        if previous is None:
-            self.head = current.get_next()
-        else:
-            previous.setNext(current.get_next())
+    def print(self):
+        final = []
+        current = self.head
+        while current:
+            final.append(str(current.get_data()))
+            current = current.get_next()
+        print('->'.join(final))
 
-mylist = UnorderedList()
+linked_list = LinkedList()
 
+while True:
+    default = """
+    1. Add
+    2. Size
+    3. Search
+    4. Remove
+    5. Print the Linked list
+    """
+    print(default)
+    option = int(input("Select any option"))
+
+    if option == 1:
+        element = input("\nEnter the element you want to add")
+        linked_list.add(element)
+
+    if option == 2:
+        print(linked_list.size())
+
+    if option == 3:
+        item = input("\nEnter the element you want to search")
+        print(linked_list.search(item))
+
+    if option == 4:
+        data1 = input("\nEnter the element you want to search")
+        linked_list.remove(data1)
+
+    if option == 5:
+        linked_list.print()
