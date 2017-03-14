@@ -1,3 +1,6 @@
+"""Stack using Linked List"""
+
+
 class Node(object):
 
     def __init__(self, data=None, next_node=None):

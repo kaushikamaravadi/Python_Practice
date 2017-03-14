@@ -1,3 +1,6 @@
+"""Queue using Linked list"""
+
+
 class Node(object):
 
     def __init__(self, data=None, next_node=None):
