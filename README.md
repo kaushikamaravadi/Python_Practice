@@ -10,6 +10,7 @@
 
 
 ###Table of Contents
+
 * Data Structures
   * Linked List
   * Queue
