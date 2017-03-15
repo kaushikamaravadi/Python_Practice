@@ -9,11 +9,9 @@
 * All Data Structures and problems should have documentation and tests.
 
 
-<<<<<<< HEAD
 ###Table of Contents
 =======
 ##Table of Contents
->>>>>>> f1339778942451ce032783bfd721cb6e4e2f5f3f
 
 * Data Structures
   * Linked List
