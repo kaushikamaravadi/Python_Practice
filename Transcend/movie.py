@@ -1,32 +1,50 @@
 import csv
-class Movie:
-    movie_id_list = []
-    def __init__(self,user_id,movie_id,rating,junk,time_stamp):
+u = []
+k = []
+p = []
+with open("/home/ubuntu/Downloads/Vote.txt", 'r') as path:
+    reader = csv.reader(path, dialect="excel-tab")
+    for content in reader:
+        u.append(content[0])
+        k.append(content[1])
+        p.append(content[2])
+
+
+class Movie(object):
+    def __init__(self, user_id, movie_id, rating):
         self.user_id = user_id
         self.movie_id = movie_id
         self.rating = rating
-        self.junk = junk
-        self.time_stamp = time_stamp
 
-    def movie(self):
-        with open("/home/kaushik/Downloads/Vote.txt", "r") as tsv:
-            for line in csv.reader(tsv, dialect="excel-tab"):
-                self.movie_id = line[1]
-                self.rating = line[2]
-                self.time_stamp = line[4]
+    def unique_users(self):
+        return len(set(self.user_id))
 
-    def user(self):
-        with open("/home/kaushik/Downloads/Vote.txt", "r") as tsv:
-            for line in csv.reader(tsv, dialect="excel-tab"):
-                self.user_id = line[0]
+    def unique_movies(self):
+        return len(set(self.movie_id))
+
+    def highest_rating(self):
+        d = zip(self.movie_id, self.rating)
+        kiki= []
+        for k, v in d:
+            if v == '1.00':
+                kiki.append(k)
+        ki = [int(d) for d in kiki]
+        return ki[:10]
+
+    def lowest_rating(self):
+        d = zip(self.movie_id, self.rating)
+        kiki= []
+        for k, v in d:
+            if v == '0.00':
+                kiki.append(k)
+        ki = [int(d) for d in kiki]
+        return ki[:10]
 
 
-movie = Movie
-print(movie.user)
 
 
+m = Movie(u,k,p)
 
-
-
-
-
+print(m.unique_users())
+print(m.unique_movies())
+print(m.highest_rating())
