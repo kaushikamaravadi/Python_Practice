@@ -1,4 +1,17 @@
-"""Movie"""
+"""Vote. txt contains Five Columns would look something like 
+1       1       0.60    1.00    4/15/96 13:16:00
+1       2       0.60    1.00    10/22/96 16:37:31
+1       10      0.40    1.00    10/26/96 15:07:36
+1       13      0.00    0.20    4/15/96 12:13:36
+1       17      0.80    1.00    9/18/96 9:22:08
+
+Find total number of Unique Users
+Find total number of Unique Movies
+Find  10 Movies with Highest Rating
+Find 10 Movies with Lowest Rating
+Find 10 Users who watched most movies
+Find 10 Users who watched less movies
+"""
 
 
 import csv
