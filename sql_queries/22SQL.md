@@ -25,3 +25,8 @@ select * from NameSplit where first_name='Ram' or middle_name='ram' or last_name
 select name , description from tblemployees as t, tblemployeetypes as s where t.employeetype = s.employeetype;
 ```
 
+#### Write a Query to get all employees where reminder of employee number by 10 is a power of two
+
+```sql
+select name from tblemployees where mod(employeenumber,10)=1 or mod(employeenumber,10)=2 or mod(employeenumber,10)=4 or mod(employeenumber,10)=8;
+```
