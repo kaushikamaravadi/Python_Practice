@@ -25,4 +25,4 @@ if __name__ == "__main__":
     p2.join()
 
 stop = time.time()
-print(start - stop)
+print(stop - start)
