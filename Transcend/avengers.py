@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-import re
+
 path = 'http://www.imdb.com/title/tt0848228/'
 everything = []
 
@@ -18,7 +18,6 @@ class Avengers(object):
     def rating(self):
         rate = self.soup.find_all(class_='ratingValue')
         rating = "".join(rate[0].get_text().strip())
-        print(rating)
         everything.append(rating)
 
     def director(self):
@@ -26,7 +25,6 @@ class Avengers(object):
             inclass = director.find_all('h4')
             text_inclass = director.find_all(class_="itemprop")
             for result in text_inclass:
-                print(result.get_text())
                 everything.append(result.get_text())
 
     def cast(self):
@@ -72,10 +70,20 @@ class Avengers(object):
             for i in extract.find_all('h4'):
                 text_block.append(i.get_text())
         for extract in self.soup.find_all(class_="txt-block"):
-            print(extract.get_text())
             for j in extract.find_all('a'):
                 details.append(j.get_text())
 
 
 avengers = Avengers(path)
+avengers.title()
 avengers.rating()
+avengers.director()
+avengers.cast()
+avengers.plot_keywords()
+avengers.stroy_line()
+avengers.summary()
+avengers.others()
+print(everything)
+
+
+

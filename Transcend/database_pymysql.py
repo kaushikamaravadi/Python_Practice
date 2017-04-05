@@ -7,4 +7,5 @@ data = cursor.fetchall()
 for row in data:
     print(row)
 print("Database version : %s " % data)
+db.cursor.close()
 db.close()
