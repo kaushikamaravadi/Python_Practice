@@ -7,7 +7,7 @@ Yet to come
 ```
 
 #### Write a Query to List out all employees where the present basic is perfectly rounded of to 100. 
-Ex: If Basic of A is 2011, Basic of B is 2100 , Basic of C is 2101 and Basic of D is 2200 . Then Only B and D should be displayed
+#### Ex: If Basic of A is 2011, Basic of B is 2100 , Basic of C is 2101 and Basic of D is 2200 . Then Only B and D should be displayed
 
 ```sql
 select grosspay from tblpayemployees  where mod(grosspay,100)=0;
