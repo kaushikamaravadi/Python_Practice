@@ -11,7 +11,7 @@
 
 ## Table of Contents
 
-* [Clouder_Api]https://github.com/kaushikamaravadi/Python_Practice/tree/master/Cloudera_Api)
+* [Clouder_Api](https://github.com/kaushikamaravadi/Python_Practice/tree/master/Cloudera_Api)
 * [Conversions](https://github.com/kaushikamaravadi/Python_Practice/tree/master/Conversions)
   * Ebay xml file conversion to csv
   * got json file conversion to csv
@@ -25,7 +25,7 @@
   * Stack using Linked List
 * [Project Euler](https://github.com/kaushikamaravadi/Python_Practice/tree/master/ProjectEuler)
   * First 60 problems in Project Euler
-* Sql_Practice
+* Sql_Practice(https://github.com/kaushikamaravadi/Python_Practice/tree/master/sql_queries)
   * DDL
   * DML
   * DCL
@@ -40,7 +40,8 @@
 * [Web Scraping](https://github.com/kaushikamaravadi/Python_Practice/tree/master/web_scraping)
   * Imdb Web Crawling and Scraping
 
-* Project Euler
+## Project Euler
+
 >  Project Euler exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the fascinating world of mathematics.
   * Project Euler was started by Colin Hughes (a.k.a. euler) in October 2001 as a subsection on mathschallenge.net. the membership has continued to grow and Project Euler moved to its own domain in 2006.
   * I solve Project Euler problems to practice and extend my math and programming skills, all while having fun at the same time.
