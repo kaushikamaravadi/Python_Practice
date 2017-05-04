@@ -25,7 +25,7 @@
   * Stack using Linked List
 * [Project Euler](https://github.com/kaushikamaravadi/Python_Practice/tree/master/ProjectEuler)
   * First 60 problems in Project Euler
-* Sql_Practice(https://github.com/kaushikamaravadi/Python_Practice/tree/master/sql_queries)
+* [Sql_Practice](https://github.com/kaushikamaravadi/Python_Practice/tree/master/sql_queries)
   * DDL
   * DML
   * DCL
