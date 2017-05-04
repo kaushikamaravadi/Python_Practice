@@ -11,12 +11,34 @@
 
 ## Table of Contents
 
-* Data Structures
+* [Clouder_Api]https://github.com/kaushikamaravadi/Python_Practice/tree/master/Cloudera_Api)
+* [Conversions](https://github.com/kaushikamaravadi/Python_Practice/tree/master/Conversions)
+  * Ebay xml file conversion to csv
+  * got json file conversion to csv
+  * generic code for json to csv
+  * nasa xml file conversions to csv
+* [Data Structures](https://github.com/kaushikamaravadi/Python_Practice/tree/master/DataStructures)
   * Linked List
   * Queue
   * Queue using Linked List
   * Stack
   * Stack using Linked List
+* [Project Euler](https://github.com/kaushikamaravadi/Python_Practice/tree/master/ProjectEuler)
+  * First 60 problems in Project Euler
+* Sql_Practice
+  * DDL
+  * DML
+  * DCL
+  * Joins
+  * Advance sql practice
+* [Transcend](https://github.com/kaushikamaravadi/Python_Practice/tree/master/Transcend)
+  * Project Euler
+  * Python Modules
+  * Linux Commands in Python
+  * Sending mails using python
+  * Google API 
+* [Web Scraping](https://github.com/kaushikamaravadi/Python_Practice/tree/master/web_scraping)
+  * Imdb Web Crawling and Scraping
 
 * Project Euler
 >  Project Euler exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the fascinating world of mathematics.
@@ -25,7 +47,16 @@
   * Warmup and Transcend lists all of my Project Euler solution code.All solutions to project euler problems are in pure python. 
   * There were some problems which are really interesting. 
 
-###Project Euler Problem 38: 
+
+
+
+
+
+
+
+
+### Project Euler Problem 38: 
+
 Take the number 192 and multiply it by each of 1, 2, and 3:
 
 				     192 * 1 = 192
@@ -50,6 +81,8 @@ What is the largest 1 to 9 pandigital 9-digit number that can be formed as the c
                 largest = int(mul)
 
 For complete code, please see Transcend Pandigital.py
+
+
 
 
 
